@@ -1,0 +1,83 @@
+/* universal selectpr */
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0;
+}
+
+/* class selector */
+.class-name {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+/* id selector */
+#id-selector{
+    font-size: 20px;
+}
+
+/* element selector */
+p{
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: brown;
+}
+
+/* groupiung selector */
+.class-name,p{
+    /* text-align: center; */
+    /* color: aqua; */
+}
+/* ----------------------------------------------------------------- */
+/* attribute selector */
+
+a[href="https://www.youtube.com/"]{
+    text-decoration: underline;
+    background: #000;
+    color: white;
+}
+
+/* p[name="para test"]{
+    font-size: 20px;
+}
+
+p[name="test para"]{
+    font-size: 20px;
+} */
+
+
+/* ~ attribte name separated by space */
+/* p[name~="para"]{
+    font-size: 20px;
+} */
+
+
+/* attribute name after - */
+/* p[name|="para"]{
+    font-size: 20px;
+} */
+
+
+/* attribute name start with  */
+/* p[name^="para"]{
+    font-size: 30px;
+} */
+
+
+/* attribute name end with  */
+/* p[name$="para"]{
+    font-size: 30px;
+} */
+
+
+
+/* all where attribute name is present */
+/* p[name*="para"]{
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+} */

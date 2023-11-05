@@ -1,0 +1,46 @@
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    background: black;
+    color: whitesmoke;
+}
+
+a:active {
+    color: blue;
+}
+
+input:focus {
+    border: groove;
+    border-radius: 5px;
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+
+input[type=checkbox]:checked{
+    outline: 2px solid red;
+    color: red;
+}
+
+
+input[type=radio]:checked{
+    outline: 2px solid red;
+    color: red;
+}
+
+input::placeholder{
+    color:  rosybrown;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+input:empty{
+    color:  rosybrown;
+}
+

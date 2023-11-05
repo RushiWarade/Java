@@ -1,0 +1,37 @@
+/* Pseudo element */
+
+p::first-line{
+    color: aqua;
+}
+
+p::first-letter{
+    font-size: 50px;
+    font-style: italic;
+    font-family: cursive;
+    color: red;
+}
+
+p::before{
+    content: "Rushi ";
+    color: blue;
+}
+
+p::after{
+    content: "Hello World ";
+    color: blue;
+}
+
+p::selection{
+    color:aquamarine ;
+    background: #000;
+}
+
+p::-moz-selection{
+    color:aquamarine ;
+    background: #000;
+}
+
+li::marker{
+    color: yellow;
+    
+}
