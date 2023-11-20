@@ -1,0 +1,55 @@
+body{
+    height: 100vh;
+}
+
+.form-outer{
+    width: 300px;
+    /* height: 50vh; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.container{
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+}
+
+.input-group{
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border: 2px solid #eee;
+    padding: 5px 10px 5px 50px;
+    font-size: 18px;
+    line-height: 30px;
+    outline: 0;
+    display: block;
+    width: 100%;
+}
+
+.icon{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    color: #4b00ff;
+    font-size: 25px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus{
+    background-color: #e7e0e0;
+    color: rgb(112, 169, 219);
+}
+
