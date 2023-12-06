@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web jsp</title>
+
+    <style>
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 35px;
+            background-color: #948181;
+        }
+
+        .left {
+            width: 60vw;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 0 10px 0 0;
+        }
+
+        nav ul li {
+            list-style-type: none;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login {
+            width: 300px;
+        }
+
+        .loginform {
+            display: none;
+        }
+
+        .display {
+
+        }
+
+    </style>
+
+
+    <script>
+        function openDialog() {
+            document.getElementById("dialog").showModal();
+        }
+
+        function closeDialog() {
+            document.getElementById("dialog").close();
+        }
+
+        function display() {
+            document.getElementById("display-login").style.display = "block";
+            document.getElementById("display-register").style.display = "none";
+        }
+        function display_reg() {
+            document.getElementById("display-login").style.display = "none";
+            document.getElementById("display-register").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <div class="left">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">About</a></li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <button id="open" onclick="openDialog()">Login/Register</button>
+
+        <dialog id="dialog" class="login">
+
+            <form action="register.jsp" method="post" class="register" id="display-register">
+
+                <input type="number" name="rollNo" placeholder="Enter Roll No." required><br><br>
+                <input type="text" name="name" placeholder="Enter your Name." required><br><br>
+                <input type="tel" name="mobile" placeholder="Enter your Mobile No ." required><br><br>
+                <input type="text" name="studyYear" placeholder="Enter studu year." required><br><br>
+                <input type="email" name="email" placeholder="Enter Your Email." required><br><br>
+                <input type="password" name="pass" placeholder="Enter Your password." required><br><br>
+
+                <input type="submit" value="Register">
+                <br>
+<br><br>
+                <button onclick="display()">login Now</button>
+            </form>
+
+            <form action="login.jsp" method="post" class="loginform" id="display-login">
+                <input type="email" name="email" placeholder="Enter Your Email." required><br><br>
+                <input type="password" name="pass" placeholder="Enter Your password." required><br><br>
+
+                <input type="submit" value="Login">
+
+                <br> <br>
+                <button onclick="display_reg()">Create Account/Register</button>
+                <br>
+
+            </form>
+            <br><br>
+            <button id="close" onclick="closeDialog()">Close Dialog</button>
+        </dialog>
+    </div>
+</nav>
+
+
+<main>
+
+</main>
+</body>
+
+</html>
