@@ -37,4 +37,13 @@ public class UserController {
         return userService.updateExpense(expense);
     }
 
+
+    public boolean deleteExpense(int delete){
+        return userService.deleteExpense(delete);
+    }
+
+    public User getUser(int id){
+        return userService.getUser(id);
+    }
+
 }

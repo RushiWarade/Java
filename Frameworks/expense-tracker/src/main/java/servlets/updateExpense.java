@@ -47,10 +47,10 @@ public class updateExpense extends HttpServlet {
 
         if (b){
             session.setAttribute("expense","Expense Updated Successfully...");
-            resp.sendRedirect("addExpense.jsp");
+            resp.sendRedirect("expenseList.jsp");
         }else {
             session.setAttribute("expense","Something wrong.!");
-            resp.sendRedirect("addExpense.jsp");
+            resp.sendRedirect("expenseList.jsp");
         }
 
     }

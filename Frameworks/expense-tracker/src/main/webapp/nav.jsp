@@ -11,7 +11,6 @@
 
             <%
                 User user = (User) session.getAttribute("userData");
-
                 if (user != null) {
             %>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -23,12 +22,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="addExpense.jsp"><span
-                            class="material-symbols-outlined">
-library_add
-</span>Add Expense</a>
+                            class="material-symbols-outlined">library_add</span>Add Expense</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="expenseList.jsp"><span class="material-symbols-outlined">
+                    <a class="nav-link active" aria-current="page" href="expenseList.jsp"><span
+                            class="material-symbols-outlined">
 list
 </span>view Expense</a>
                 </li>
@@ -46,16 +44,13 @@ list
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria - current="page" href="signup.jsp"><span class=
-                                                                                                     "material-symbols-outlined">
-                            app_registration
+                    <a class="nav-link active" aria - current="page" href="signup.jsp"><span
+                            class="material-symbols-outlined">app_registration
                             </span> Signup </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria - current="page" href="login.jsp"><span class=
-                                                                                                    "material-symbols-outlined">
-                            login
-                            </span> Login </a>
+                    <a class="nav-link active" aria - current="page" href="login.jsp"><span
+                            class="material-symbols-outlined">login</span> Login </a>
                 </li>
             </ul>
 
@@ -71,11 +66,14 @@ list
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria - current="page" href="#"><%=user.getName()%>
+                    <a class="nav-link active" aria - current="page" href="editProfile.jsp"><span class="material-symbols-outlined">
+account_circle
+</span><%=user.getName()%>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria - current="page" href="logout"><span class="material-symbols-outlined">
+                    <a class="nav-link active" aria - current="page" href="logout"><span
+                            class="material-symbols-outlined">
 logout
 </span>Logout </a>
                 </li>

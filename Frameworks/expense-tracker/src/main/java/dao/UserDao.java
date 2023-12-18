@@ -96,4 +96,26 @@ public class UserDao {
         b=true;
         return b;
     }
+
+    public boolean deleteExpense(int delete) {
+        boolean del = false;
+        Session session = HibernateUtil.getSessionFactory().openSession();
+
+        Transaction transaction = session.beginTransaction();
+        Query query = session.createQuery("delete  from  expense where id=:delete");
+        query.setParameter("delete",delete);
+        query.executeUpdate();
+        transaction.commit();
+        del=true;
+        return del;
+    }
+
+    public User getUser(int id) {
+        User user = null;
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Query query = session.createQuery("from user  where id=:user");
+        query.setParameter("user",id);
+        user =(User) query.uniqueResult();
+        return  user;
+    }
 }

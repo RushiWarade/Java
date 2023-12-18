@@ -3,6 +3,10 @@ package service;
 import dao.UserDao;
 import model.Expense;
 import model.User;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+import util.HibernateUtil;
 
 import java.util.List;
 
@@ -10,7 +14,7 @@ public class UserService {
     UserDao userDao = new UserDao();
 
     public boolean addUser(User user) {
-        return userDao.addUser(user);
+      return userDao.addUser(user);
     }
 
     public User login(String email, String password) {
@@ -31,5 +35,13 @@ public class UserService {
 
     public boolean updateExpense(Expense expense) {
         return userDao.updateExpense(expense);
+    }
+
+    public boolean deleteExpense(int delete) {
+        return userDao.deleteExpense(delete);
+    }
+
+    public User getUser(int id) {
+        return userDao.getUser(id);
     }
 }

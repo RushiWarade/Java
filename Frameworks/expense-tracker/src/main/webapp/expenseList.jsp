@@ -2,13 +2,7 @@
 <%@ page import="model.Expense" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    User userData = (User) session.getAttribute("userData");
-    if (userData == null) {
-        response.sendRedirect("index.jsp");
-    }
 
-%>
 <html>
 <head>
     <title>Expense List</title>
@@ -74,7 +68,7 @@
                             </td>
                             <td>
                                 <a href="editExpense.jsp?edit=<%=expense.getId()%>" class="btn btn-sm me-1 btn-success">Edit</a>
-                                <a href="#" class="btn btn-sm me-1 btn-danger">Delete</a>
+                                <a href="delete?delete=<%=expense.getId()%>" class="btn btn-sm me-1 btn-danger">Delete</a>
                             </td>
                         </tr>
 

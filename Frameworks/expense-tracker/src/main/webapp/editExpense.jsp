@@ -1,12 +1,8 @@
 <%@ page import="controller.UserController" %>
-<%@ page import="model.Expense" %><%--
-  Created by IntelliJ IDEA.
-  User: rushi
-  Date: 17-12-2023
-  Time: 02:49 pm
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="model.Expense" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <html>
 <head>
     <title>Title</title>
@@ -59,7 +55,7 @@
                             <input type="number" name="price" id="price" class="form-control" required
                                    value="<%=expense.getPrice()%>">
                         </div>
-                        <input type="hidden" value="<%=expense.getId()%>" name="id" >
+                        <input type="hidden" value="<%=expense.getId()%>" name="id">
                         <div class="mb-3">
                             <input type="submit" value="Update Expense" class="col-md-12 btn btn-primary">
                         </div>
