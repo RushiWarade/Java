@@ -20,7 +20,7 @@ public class UpdateRecord extends HttpServlet {
         resp.setContentType("text/html");
 
         int rollNo = Integer.parseInt(req.getParameter("urollNo"));
-        String name = req.getParameter("uname");
+        req.getParameter("uname");
         String email = req.getParameter("uemail");
         String mobile = req.getParameter("umobile");
         String education = req.getParameter("ueducation");

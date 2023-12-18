@@ -12,31 +12,31 @@ public class App {
         Controller controller = new Controller();
 
 //        Add data
-       /* Course course= Course.builder()
-                .name("Saurabh")
-                .email("saurabh@gmail.com")
-                .mobile("876757678")
-                .build();
-        controller.add(course);*/
+//        Course course= Course.builder()
+//                .name("Shubham")
+//                .email("shubham@gmail.com")
+//                .mobile("8956213562 ")
+//                .build();
+//        controller.add(course);
 
 
 
 //        update data
-       /* Course course = Course.builder()
-                .id(1)
-                .name("Rushi Warade")
-                .email("rushiwarade023@gmail.com")
-                .mobile("9075063779")
-                .build();
-        controller.update(course);*/
+//        Course course = Course.builder()
+//                .id(52)
+//                .name("Shubham pachpol")
+//                .email("rushiwarade023@gmail.com")
+//                .mobile("9075063779")
+//                .build();
+//        controller.update(course);
 
 
 //        get course
-//        controller.get(1);
+        controller.get(2);
 
 
 //        Delete course
-        controller.delete(1);
+//        controller.delete(1);
 
     }
 }
